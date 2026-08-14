@@ -17,7 +17,7 @@ The test user will be used to test:
 
 The test user has not been created yet.
 
-Client approval and the required licence are needed before implementation.
+Client approval waiting.
 
 ## Planned Work
 
