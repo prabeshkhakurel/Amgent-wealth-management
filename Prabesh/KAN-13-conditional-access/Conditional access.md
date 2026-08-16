@@ -10,7 +10,7 @@ sign-in security for Amgent Wealth Management.
 I checked Conditional Access in the Microsoft Entra Admin Center.
 
 The system showed that Microsoft Entra ID P1 or P2 is required to use
-Conditional Access.
+Conditional Access but for the project we will used microsoft business premium so we can get this feature.
 
 The current tenant is using Microsoft Entra ID Free.
 
