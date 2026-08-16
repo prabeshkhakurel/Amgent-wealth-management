@@ -44,13 +44,6 @@ No user accounts, licences or administrator roles were changed during
 this task.
 
 
-## Evidence
-
-The following evidence was collected:
-
-- `KAN10_Active_Users.png`
-- `KAN10_Admin_Global_Admin.png`
-- `KAN10_Ben_Global_Admin.png`
 
 ## Result
 
