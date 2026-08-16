@@ -1,38 +1,51 @@
-# Microsoft Defender Testing
+# Microsoft Defender and Email Security – Testing
 
-## Objective
+**Team Member:** Kiran Pariyar  
+**Project:** Amgent Wealth Cybersecurity Upgrade  
+**Area:** Microsoft Defender and Email Security  
 
-Verify that all Microsoft Defender security controls are functioning correctly.
+## Purpose
 
-## Test Cases
+The purpose of this testing is to verify that Microsoft Defender and email security controls are correctly configured and working as expected after implementation.
 
-| Test ID | Security Control | Test Procedure | Expected Result | Status |
+## Planned Security Tests
+
+| Test ID | Security Control | Test Method | Expected Result | Status |
 |---|---|---|---|---|
-| T01 | Microsoft Defender | Verify Defender is enabled and accessible | Defender security services are available | Pending |
-| T02 | Safe Links | Verify Safe Links policy and test approved URL protection method | URLs are checked according to configured policy | Pending |
-| T03 | Safe Attachments | Verify Safe Attachments policy using an approved test method | Suspicious attachments are detected or quarantined according to policy | Pending |
-| T04 | Anti-Phishing | Verify anti-phishing policy and use an approved simulation/test method | Simulated phishing activity is detected according to policy | Pending |
-| T05 | Anti-Spam | Review inbound spam protection | Spam messages are filtered according to policy | Pending |
-| T06 | Security Alerts | Review Defender alerts after approved testing | Relevant security events are recorded where applicable | Pending |
-
-## Current Testing Status
-
-Testing has not yet been performed because access to the client's Microsoft 365 environment is pending.
-
-The test cases have been prepared in advance so that security controls can be validated once the required administrative access is available.
+| T01 | Microsoft Defender | Review Defender security status and active policies | Defender services and required protection are enabled | Planned |
+| T02 | Safe Links | Send/test an email containing a safe test URL and verify Safe Links processing | URL protection policy is applied correctly | Planned |
+| T03 | Safe Attachments | Perform an approved test using a safe test attachment | Attachment is scanned according to the configured policy | Planned |
+| T04 | Anti-Phishing | Review and test the configured anti-phishing policy | Suspicious/phishing messages are detected or handled according to policy | Planned |
+| T05 | Anti-Spam | Review inbound anti-spam policy and perform an approved test | Spam messages are handled according to the configured policy | Planned |
+| T06 | Anti-Malware | Review malware protection policy and perform an approved Microsoft-supported test | Malicious test content is blocked or quarantined | Planned |
+| T07 | Quarantine | Review quarantined messages after security testing | Detected threats appear in quarantine with the appropriate action | Planned |
 
 ## Evidence Required
 
-- Screenshots of configured security policies
-- Screenshots/results from approved security tests
-- Defender alerts or reports generated during testing
-- Final test results
-- Jira updates documenting completed testing
+Evidence will be collected during implementation and testing, including:
 
-## Safety Note
+- Screenshots of Microsoft Defender configuration
+- Safe Links policy screenshots
+- Safe Attachments policy screenshots
+- Anti-Phishing policy screenshots
+- Anti-Spam and Anti-Malware configuration
+- Test results
+- Quarantine evidence where applicable
 
-Testing will only be conducted using approved Microsoft testing or simulation methods. No real malware or malicious phishing content will be used.
+## Week 4 Status
 
-## Overall Status
+Client administrative access has been received.
 
-**Pending Client Access**
+The Microsoft Defender and email security implementation has started. Baseline security settings will be reviewed and documented before configuration changes are made.
+
+**Overall Testing Status:** Planned / Not Yet Completed
+
+## Next Steps
+
+1. Review the existing Microsoft Defender configuration.
+2. Capture baseline screenshots.
+3. Configure the required security policies.
+4. Perform controlled security tests.
+5. Record actual results in this document.
+6. Add screenshots and other evidence.
+7. Update each test status to Pass, Fail, or Requires Review.
