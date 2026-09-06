@@ -1,26 +1,39 @@
-# KAN-14 – Create Pilot Security Group
-
-## Objective
 
 Create a pilot security group in Microsoft Entra ID for security testing.
+# KAN-14 – Security Pilot Group
+
+## Objective
+Create a dedicated Microsoft Entra security group for controlled testing of Microsoft 365 and Entra ID security policies before production deployment.
+
+## Group Name
+AMG-Security-Pilot
+
+## Group Type
+Security
+
+## Membership Type
+Assigned
+
+## Work Completed
+- Reviewed the existing Microsoft Entra groups.
+- Created the AMG-Security-Pilot security group.
+- Configured the group as a Security group with Assigned membership.
+- Added the AMGENT Security Test account as a member.
+- Verified that the test account was successfully added as a direct member.
 
 ## Purpose
+The AMG-Security-Pilot group was created to provide a controlled testing environment.
 
-The group will be used to test MFA and Conditional Access before
-applying security policies to existing users.
+Security policies such as Microsoft Authenticator and Conditional Access can be assigned to this group first instead of applying them directly to the production user.
 
-## Planned Work
 
-1. Create a security group in Microsoft Entra ID.
-2. Add the Microsoft 365 test user to the group.
-3. Verify group membership.
-4. Use the group for security policy testing.
-5. Collect screenshots as evidence.
+## Testing and Verification
+The AMG-Security-Pilot group was visible in Microsoft Entra after creation.
 
-## Current Status
+The group membership was reviewed and the AMGENT Security Test account was confirmed as a direct member.
 
-The security group has not been created yet.
+## Result
+The pilot security group was successfully created and prepared for security-policy testing.
 
 ## Status
-
-Pending
+Completed
