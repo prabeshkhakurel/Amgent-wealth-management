@@ -18,6 +18,12 @@
   `p=quarantine` or `p=reject` once confident legitimate mail
   won't be affected
 
+  ## Update (today's session)
+
+- Attempted to verify Microsoft 365 DKIM selector configuration
+  via admin.microsoft.com — do not currently have working admin
+  access. Need credentials from team/Ben to proceed.
+
 ## Evidence
 
 Screenshot in `Evidence` folder: Cloudflare DNS records list
