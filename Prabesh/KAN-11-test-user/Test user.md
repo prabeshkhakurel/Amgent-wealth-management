@@ -13,21 +13,14 @@ The test user will be used to test:
 - Security groups
 - Conditional Access
 
-## Current Status
-
-The test user has not been created yet.
-
-Client approval waiting.
-
-## Planned Work
+##  Work Done
 
 1. Create a test user.
-2. Keep it as a standard user.
+2. Keep it as a standard user
 3. Assign the required licence.
 4. Add it to the pilot security group.
 5. Test MFA and Conditional Access.
 6. Collect screenshots as evidence.
 
 ## Status
-
-**Pending Client Approval**
+Completed
