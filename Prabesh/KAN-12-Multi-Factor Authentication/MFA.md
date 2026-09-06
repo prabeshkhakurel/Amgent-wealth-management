@@ -4,19 +4,21 @@
 
 Configure and test MFA for the Microsoft 365 pilot user.
 
-## Current Findings
 
-- Per-user MFA was reviewed.
-- Existing users showed per-user MFA as disabled.
-- Security Defaults is currently enabled.
+## Work Completed
+-Reviewed Microsoft Entra authentication methods.
+- Enabled Microsoft Authenticator.
+- Targeted the AMG-Security-Pilot group.
+- Configured Push authentication for the pilot group.
+- Used the AMGENT Security Test account for pilot testing.
 
-## Planned Work
+## Current Status
+Pilot MFA configuration completed.
 
-- Register Microsoft Authenticator for the test user.
-- Test MFA sign-in.
-- Verify the result.
-- Collect screenshots.
-
+## Remaining Work
+- Register Microsoft Authenticator on Ben's own phone.
+- Test Ben's MFA.
+- Complete production rollout after final pilot validation.
+  
 ## Status
-
-In Progress – Baseline Review Completed
+In Progress 
