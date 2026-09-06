@@ -1,44 +1,55 @@
-# KAN-13 – Configure Conditional Access
+
+
+# KAN-13 – Conditional Access
 
 ## Objective
+Configure and test a Conditional Access MFA policy using the pilot environment before production enforcement.
 
-Configure and test Conditional Access in Microsoft Entra ID to improve
-sign-in security for Amgent Wealth Management.
+## Policy Name
+CA-PILOT-Require-MFA
 
-## Current Review
+## Pilot Group
+AMG-Security-Pilot
 
-I checked Conditional Access in the Microsoft Entra Admin Center.
+## Target Resources
+All resources
 
-The system showed that Microsoft Entra ID P1 or P2 is required to use
-Conditional Access but for the project we will used microsoft business premium so we can get this feature.
+## Grant Control
+Require multifactor authentication
 
-The current tenant is using Microsoft Entra ID Free.
+## Location
+Any location
 
-## Current Issue
+## Policy State
+Report-only
 
-Conditional Access cannot currently be implemented because the required
-licence is not available.
+## Work Completed
+- Created the CA-PILOT-Require-MFA Conditional Access policy.
+- Assigned the AMG-Security-Pilot group.
+- Configured all resources as the target.
+- Configured multifactor authentication as the access requirement.
+- Kept the policy in Report-only mode for safe pilot testing.
+- Tested sign-in using the AMGENT Security Test account.
+- Reviewed Microsoft Entra sign-in logs.
+- Reviewed the Conditional Access Report-only result.
 
-No Conditional Access policy was changed or created.
+## Testing Result
+The AMGENT Security Test account generated successful sign-in events.
 
-## Planned Implementation
+The CA-PILOT-Require-MFA policy was evaluated in Report-only mode and showed that user action would be required if the policy were enforced.
 
-After the required licence is available:
+## Security Consideration
+Report-only mode was used to reduce the risk of locking out the production user during testing.
 
-1. Confirm access to Conditional Access.
-2. Create a pilot Conditional Access policy.
-3. Apply it only to the pilot security group.
-4. Configure the required MFA control.
-5. Start testing safely with the pilot/test user.
-6. Review the sign-in result.
-7. Collect screenshots as evidence.
+Microsoft Entra also displayed a warning that Security Defaults must be disabled before Conditional Access can be enforced. No production enforcement was performed at this stage.
 
-## Evidence
+## Current Status
+Pilot Conditional Access testing completed.
 
-Current evidence:
+Production enforcement remains pending.
 
-- Conditional Access licence requirement screenshot
-
-## Status
-
-**Required Licence Pending**
+## Remaining Work
+- Create and test the compliant-device Conditional Access policy.
+- Complete final pilot validation.
+- Register MFA on Ben's own phone.
+- Prepare controlled production rollout.
