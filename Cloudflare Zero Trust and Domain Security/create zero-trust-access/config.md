@@ -18,3 +18,13 @@
 - Identity-based access policies requiring SSO integration with
   Microsoft Entra ID — pending confirmation of Entra ID/Conditional
   Access setup status (dependency on Prabesh's part of the project)
+
+  ## Testing (KAN-31)
+
+- Tested Gateway DNS policy with official Cloudflare test domain:
+  malware.testcategory.com
+- Verified via nslookup: DNS resolved through WARP client
+  (connectivity-check.warp-svc), test domain returned null
+  addresses (::, 0.0.0.0) — confirms policy is actively blocking
+  malicious domain categories
+- Status: Verified working
