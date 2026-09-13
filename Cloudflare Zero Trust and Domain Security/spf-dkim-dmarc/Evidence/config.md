@@ -28,3 +28,15 @@
 
 Screenshot in `Evidence` folder: Cloudflare DNS records list
 showing SPF, DKIM, and DMARC TXT records.
+
+## Update — DKIM enabled
+
+- Confirmed Microsoft 365 DKIM was disabled (NoDKIMKeys status)
+  for amgentwealth.com.au
+- Added required CNAME records to Cloudflare:
+  - selector1._domainkey → selector1-amgentwealth-com-au._domainkey.amgentwealth.w-v1.dkim.mail.microsoft
+  - selector2._domainkey → selector2-amgentwealth-com-au._domainkey.amgentwealth.w-v1.dkim.mail.microsoft
+- Successfully enabled DKIM signing in Microsoft Defender
+- Status: DKIM now Enabled for Microsoft 365 mail
+- Remaining: review DMARC policy (currently p=none)
+
