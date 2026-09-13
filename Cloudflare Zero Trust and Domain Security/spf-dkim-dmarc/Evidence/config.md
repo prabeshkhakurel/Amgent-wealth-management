@@ -40,3 +40,15 @@ showing SPF, DKIM, and DMARC TXT records.
 - Status: DKIM now Enabled for Microsoft 365 mail
 - Remaining: review DMARC policy (currently p=none)
 
+- ## Update — DMARC review
+
+- Reviewed DMARC reports via Cloudflare Email > DMARC Management
+- Last 7 days: 78 emails passed DMARC, 16 failed
+- Microsoft Corporation (legitimate M365 mail): 97.4% pass rate
+- Google LLC: 0% pass (11 emails) — source unconfirmed
+- Amazon.com, Inc.: 0% pass (2 emails) — source unconfirmed
+- Servers Australia Pty Ltd: 75% pass (4 emails)
+- Decision: holding off on tightening DMARC policy (p=none →
+  p=quarantine) until confirming with Ben whether Google/Amazon
+  services are legitimately used to send mail on his behalf
+
