@@ -52,3 +52,14 @@ showing SPF, DKIM, and DMARC TXT records.
   p=quarantine) until confirming with Ben whether Google/Amazon
   services are legitimately used to send mail on his behalf
 
+  ## Update — DMARC moved to enforcement
+
+- Changed DMARC policy from p=none to p=quarantine
+- Reasoning: legitimate Microsoft 365 mail passes at 97.4%,
+  unverified failing senders (Google LLC, Amazon.com Inc) could
+  not be confirmed as legitimate by Ben/team — treated as
+  potential spoofing risk per DMARC best practice
+- New record: v=DMARC1; p=quarantine; rua=mailto:...; pct=100;
+- Next: monitor reports, consider p=reject after a stable period
+- Status: Done
+
