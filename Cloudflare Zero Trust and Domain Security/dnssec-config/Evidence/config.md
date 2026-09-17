@@ -32,3 +32,11 @@
 Screenshots in `Evidence` folder: Cloudflare DNSSEC settings page,
 Crazy Domains Name Servers/Administration tabs showing no DS
 record option.
+
+## Update — DNSSEC fully active
+
+- Crazy Domains support (phone) manually published the DS record
+  (contacted by Kiran)
+- Cloudflare confirms: "Success! amgentwealth.com.au is protected
+  with DNSSEC."
+- Status: Done
